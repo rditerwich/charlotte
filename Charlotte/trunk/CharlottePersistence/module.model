@@ -1,0 +1,20 @@
+root /modules
+
+import Metaphor.Core.Dependency
+import Metaphor.Core.Version
+import Metaphor.PSM.J2ee.J2eeModule
+
+J2eeModule {
+    id = claro.charlotte.persistence
+    name = CharlottePersistence
+    provider = Claro
+    version = Version { major = 1 minor = 0 micro = 0 }
+    dependencies = {
+        Dependency {
+            module = claro.charlotte.common
+        }
+        Dependency {
+            module = metaphor.models
+        }
+    }
+}

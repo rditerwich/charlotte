@@ -1,0 +1,15 @@
+root /architecture
+
+import Metaphor.PSM.J2eeArchitectureJpaEjbWicket
+
+J2eeArchitectureJpaEjbWicket {
+    name = CharlotteArchitecture
+    providerPackage = /packages:Claro
+    productPackage = /packages:Claro/packages:Charlotte
+    commonModule = /modules:claro.charlotte.common
+    persistenceModule = /modules:claro.charlotte.persistence
+    businessLogicModule = /modules:claro.charlotte.businesslogic
+    presentationModule = /modules:claro.charlotte.presentation
+    jpaVendor = EclipseLink
+    databaseVendor = postgresql
+}

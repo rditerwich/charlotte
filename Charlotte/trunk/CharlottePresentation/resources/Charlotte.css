@@ -1,0 +1,27 @@
+#header-background, #footer-background {
+  background-color: #4D3F3F;
+  margin: 20px;
+  height: 80px;
+}
+
+#company-phrase {
+  color: white;
+  font-size: 16pt;
+}
+
+#header-images {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+#round-corner-right-top {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+#header {
+  background: url("RoundCornerLeftTop.png") no-repeat left top; 
+}

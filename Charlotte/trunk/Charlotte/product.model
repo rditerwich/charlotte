@@ -1,0 +1,21 @@
+root /products
+
+import Metaphor.Core.Version
+import Metaphor.PSM.J2ee.J2eeProduct
+
+J2eeProduct {
+    id = claro.charlotte
+    name = Charlotte
+    provider = Claro
+    version = Version { major = 1 minor = 0 micro = 0 }
+    modules = {
+        claro.charlotte
+        claro.charlotte.common
+        claro.charlotte.persistence
+        claro.charlotte.businesslogic
+        claro.charlotte.presentation
+        claro.charlotte.domain
+    }
+    domain = /packages:Claro/packages:Domain
+    architecture = /architecture:CharlotteArchitecture
+}
