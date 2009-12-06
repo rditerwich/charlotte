@@ -1,9 +1,10 @@
 root /deployment
 
 import Metaphor.Core.DeploymentConfiguration
-
 import Metaphor.PSM.Glassfish2.EclipseLinkConfiguration
 import Metaphor.PSM.Glassfish2.Glassfish2Configuration
+import Metaphor.PSM.Glassfish2.HibernateConfiguration
+import Metaphor.PSM.Glassfish2.TopLinkConfiguration
 import Metaphor.PSM.PostgreSQL.PostgreSQLConfiguration
 
 DeploymentConfiguration {
@@ -11,9 +12,9 @@ DeploymentConfiguration {
     name = "Charlotte Deployment Local"
     productConfigurations = {
         Glassfish2Configuration {
+            debugDeployment = true
             installDir = "d:/glassfish"
             domain = domain1
-
 
             dbConfiguration = PostgreSQLConfiguration {
                 installDir = "c:/Program Files/PostgreSQL/8.3"
@@ -26,8 +27,6 @@ DeploymentConfiguration {
                 jdbcDriverClasspath = "C:/Program Files/psqlJDBC/postgresql-8.3-603.jdbc3.jar"
             }
 
-            jpaConfiguration = EclipseLinkConfiguration {
-            }
         }
     }
 }

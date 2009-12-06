@@ -8,8 +8,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import org.apache.wicket.Application;
 import org.apache.wicket.markup.html.image.ContextImage;
+import org.apache.wicket.model.IModel;
+import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.resource.ContextRelativeResource;
@@ -20,17 +21,18 @@ import org.apache.wicket.util.time.Duration;
 public class RandomImage extends ContextImage {
 
 	private static final long serialVersionUID = 1L;
+	private static final Map<String, RandomImageModel> staticModelStore = new HashMap<String, RandomImageModel>();
 	private static final Map<String, Boolean> existingImages = new HashMap<String, Boolean>();
 	private static final Random random = new Random();
 	private final RandomImageModel model;
 	private final String resourceFormat;
 
 	public RandomImage(String id, String resourceFormat, Duration duration) {
-		this(id, resourceFormat, new RandomImageModel(), new RandomImageGroup(duration, 100, 0));
+		this(id, resourceFormat, getOrCreateModel(id), new RandomImageGroup(duration, 100, 0));
 	}
 	
 	public RandomImage(String id, String resourceFormat, RandomImageGroup group) {
-		this(id, resourceFormat, new RandomImageModel(), group);
+		this(id, resourceFormat, getOrCreateModel(id), group);
 	}
 	
 	private RandomImage(String id, String resourceFormat, RandomImageModel model, RandomImageGroup group) {
@@ -46,6 +48,15 @@ public class RandomImage extends ContextImage {
 	
 	public void setResource(String resource) {
 		model.setObject(resource);
+	}
+	
+	private static RandomImageModel getOrCreateModel(String id) {
+		RandomImageModel model = staticModelStore.get(id);
+		if (model == null) {
+			model = new RandomImageModel();
+			staticModelStore.put(id, model);
+		}
+		return model;
 	}
 	
 	@Override

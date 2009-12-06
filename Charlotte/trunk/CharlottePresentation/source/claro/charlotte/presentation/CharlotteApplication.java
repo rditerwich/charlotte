@@ -4,8 +4,15 @@ import org.apache.wicket.Page;
 import org.apache.wicket.protocol.http.WebApplication;
 
 public class CharlotteApplication extends WebApplication {
-    @Override
+
+	@Override
+	protected void init() {
+		mountBookmarkablePage("/home", HomePage.class);
+		mountBookmarkablePage("/concept", ConceptPage.class);
+	}
+	
+	@Override
     public Class<? extends Page> getHomePage() {
-        return CharlottePage.class;
+        return HomePage.class;
     }
 }

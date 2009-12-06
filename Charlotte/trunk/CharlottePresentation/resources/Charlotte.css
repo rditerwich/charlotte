@@ -1,27 +1,91 @@
-#header-background, #footer-background {
-  background-color: #4D3F3F;
-  margin: 20px;
-  height: 80px;
+* {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 20px;
+	text-align: center;
+}
+
+#page-panel {
+	margin-left: auto;
+	margin-right: auto;
+	width: 70em;
+	text-align: left;
+}
+
+/*** Header & Footer ***/
+
+#header-background,#footer-background {
+	background-color: #4D3F3F;
+}
+
+#header-panel {
+	height: 80px;
+}
+
+#footer-panel {
+	height: 40px;
 }
 
 #company-phrase {
-  color: white;
-  font-size: 16pt;
+	color: white;
+	font-size: 16pt;
 }
 
-#header-images {
-  position: absolute;
-  right: 20px;
-  top: 20px;
+#header-image-panel {
+	position: relative;
+	float:right;
+	top: -80px;
+	right: -14px;
+}
+
+#header-image-panel img {
+	width: 120px;
+	height: 80px;
+}
+
+#logo {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#round-corner-left-top {
+	position: relative;
+	float: left;
+	top: -80px;
 }
 
 #round-corner-right-top {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  z-index: 1;
+	position: relative;
+	float: right;
+	top: -80px;
+	z-index: 1;
 }
 
-#header {
-  background: url("RoundCornerLeftTop.png") no-repeat left top; 
+#round-corner-left-bottom {
+	position: relative;
+	float: left;
+	top: -14px;
 }
+
+#round-corner-right-bottom {
+	position: relative;
+	float: right;
+	top: -14px;
+}
+
+/*** Menu Bar ***/
+
+#menu-panel {
+	height: 30px;
+	background-color: #948C8C;
+	margin-top: 12px;
+}
+
+#content-panel {
+	background-color: #DBD9D9;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+

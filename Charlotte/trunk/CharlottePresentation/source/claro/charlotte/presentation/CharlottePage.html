@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <wicket:head>
   <title>Charlotte</title>
   <wicket:link>
@@ -6,22 +7,35 @@
   </wicket:link>
 </wicket:head>
 <body>
-	<div wicket:id="header-background" id="header-background">
-		<div wicket:id="header" id="header">
-			<img wicket:id="logo"/>
-    		<span wicket:id="company-phrase" id="company-phrase">Your Eyes on the Web</span>
+	<div id="page-panel">
+		<div wicket:id="header-background" id="header-background">
+			<div wicket:id="header-panel" id="header-panel">
+				<img id="logo"/>
+	    		<span id="company-phrase">Your Eyes on the Web</span>
+		    </div>
+			<img wicket:id="round-corner-left-top" id="round-corner-left-top"/>
+			<img wicket:id="round-corner-right-top" id="round-corner-right-top"/>
+			<div wicket:id="header-image-panel" id="header-image-panel">
+	    		<img wicket:id="header-image1" id="header-image1"/><img wicket:id="header-image2" id="header-image2"/><img wicket:id="header-image3" id="header-image3"/>
+		    </div>
 	    </div>
-		<div wicket:id="header-images" id="header-images">
-    		<img wicket:id="headerimage1" id="headerimage1" width="120px" height="80px"/>
-    		<img wicket:id="headerimage2" id="headerimage2" width="120px" height="80px"/>
-    		<img wicket:id="headerimage3" id="headerimage3" width="120px" height="80px"/>
-	    </div>
-		<img wicket:id="round-corner-right-top" id="round-corner-right-top"/>
-    </div>
 
-	<div id="footer">
-    	<span id="growth-image"></span>
-    	<span id="growth-text">Growth</span>
+		<div id="menu-panel">
+			<span><a wicket:id="home-page">Home</a></span>
+			<span><a wicket:id="concept-page">The Concept</a></span>
+		</div>
+		
+		<div id="content-panel"></div>
+	
+		<div wicket:id="footer-background" id="footer-background">
+			<div wicket:id="footer-panel" id="footer-panel">
+		    	<span id="growth-image"></span>
+		    	<span id="growth-text">Growth</span>
+		    	blablabla
+		    </div>
+			<img wicket:id="round-corner-left-bottom" id="round-corner-left-bottom"/>
+			<img wicket:id="round-corner-right-bottom" id="round-corner-right-bottom"/>
+	    </div>
     </div>
 </body>
 </html>
