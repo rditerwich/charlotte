@@ -10,7 +10,7 @@
 	<div id="page-panel">
 		<div wicket:id="header-background" id="header-background">
 			<div wicket:id="header-panel" id="header-panel">
-				<img id="logo"/>
+				<img wicket:id="logo" id="logo"/>
 	    		<span id="company-phrase">Your Eyes on the Web</span>
 		    </div>
 			<img wicket:id="round-corner-left-top" id="round-corner-left-top"/>
@@ -25,7 +25,8 @@
 			<span><a wicket:id="concept-page">The Concept</a></span>
 		</div>
 		
-		<div id="content-panel"></div>
+		<div id="content-panel"><wicket:child/><div class="spacer" />
+		</div>
 	
 		<div wicket:id="footer-background" id="footer-background">
 			<div wicket:id="footer-panel" id="footer-panel">
