@@ -1,0 +1,181 @@
+/*** Generic Definitions ***/
+
+* {
+	font-family: sans-serif;
+	font-size: 10pt;
+	color: #4D3F3F;
+}
+
+.spacer {
+	clear: both;
+}
+
+/*** Global Page ***/
+
+
+body {
+	margin: 20px;
+	text-align: center;
+}
+
+#page-panel {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	min-width: 1000px;
+	text-align: left;
+}
+
+/*** Header & Footer ***/
+
+#header-panel {
+	position: relative;
+	background-color: #4D3F3F;
+	height: 80px;
+}
+
+#footer-panel {
+	background-color: #4D3F3F;
+	height: 40px;
+}
+
+#logo {
+	position: absolute;
+	
+	/* content-col padding + text-panel padding */
+	left: 24px;
+	
+	bottom: 18px;
+}
+
+#company-phrase {
+	color: white;
+	font-size: 16pt;
+	position: absolute;
+	
+	/* make sure it aligns nicely with logo */
+	left: 160px;
+	bottom: 14px;
+}
+
+#header-image-panel {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#header-image-panel img {
+	width: 120px;
+	height: 80px;
+}
+
+
+#round-corner-left-top {
+	position: absolute;
+	top: 0px;
+}
+
+#round-corner-right-top {
+	position: relative;
+	float: right;
+	top: -80px;
+	z-index: 1;
+}
+
+#round-corner-left-bottom {
+	position: relative;
+	float: left;
+	top: -14px;
+}
+
+#round-corner-right-bottom {
+	position: relative;
+	float: right;
+	top: -14px;
+}
+
+/*** Menu Bar ***/
+
+#menu-panel {
+	height: 30px;
+	background-color: #948C8C;
+	margin-top: 12px;
+}
+
+/*** Page Content ***/
+
+#content-panel {
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding: 0px;
+}
+
+.content-table {
+	border-spacing: 0px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+.content-col {
+	vertical-align: top;
+	padding: 12px;
+}
+
+/*** Various Panel Kinds ***/
+
+.text-panel {
+	background-color: #F8F7F7;
+	margin-top: 12px;
+	padding: 6px;
+}
+
+.text-panel h1 {
+	font-size: 12pt;
+	
+	/* make room for background image */
+	padding-top: 2px; 	
+	padding-left: 24px; 	
+	
+	/* single-line background doesn't work in IE and FF */
+	background-image: url("images/Eyes.gif");
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.small-panel {
+	background-color: #F8F7F7;
+	padding: 8px;
+	margin-top: 6px;
+}
+
+.small-panel h1 {
+	
+	font-size: 11pt;
+
+	/* reset inherited margin */
+	margin: 0px;
+	
+	/* when right-aligned, background image should move with text */
+	display: inline; 
+	
+	/* make room for background image */
+	padding-left: 18px; 	
+	
+	/* single-line background doesn't work in IE and FF */
+	background-image: url("images/EyesSmall.gif");
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.small-panel p {
+
+	/* reset inherited margin */
+	margin: 0px;
+	margin-top: 2px;
+}
+
+.vertical-panel {
+	background-color: #F8F7F7;
+}
+
+

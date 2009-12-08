@@ -62,10 +62,6 @@ public class RandomImageGroup implements Serializable {
 			if (random.nextInt(100) < chances[i]) {
 				RandomImage image = randomImages.get(i);
 				chooseUniqueRandomImage(image);
-				// TODO REMOVE
-//				image.setDefaultModelObject(image.getDefaultModelObject());
-				// TODO REMOVE
-				System.out.println("Changed image " + i + " to " + image.getResource());
 				target.addComponent(image);
 			}
 		}

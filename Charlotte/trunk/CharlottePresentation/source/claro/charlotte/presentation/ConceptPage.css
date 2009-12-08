@@ -1,0 +1,67 @@
+
+/*** Left side ***/
+
+#content-col1 {
+	background-color: #DBD9D9;
+	width: 640px;
+	
+	/* space between col1 and col2 */
+	border-right: 12px solid white;
+}
+
+#content-col2 {
+	background-color: #948C8C;
+	width: 340px;
+	position: relative;
+	margin: 0px;
+}
+
+
+#panel-charlottes-widgets img {
+	padding-left: 12px;
+}
+
+/*** Right side ***/
+
+.small-panel {
+	height: 48px;
+	position: relative;
+}
+
+.small-panel img {
+	position: absolute;
+	top: 10px;
+}
+
+#small-panel-container-top {
+	text-align: right;
+	
+	/* space between the two containers */
+	margin-bottom: 12px;
+}
+
+#small-panel-container-top .small-panel {
+	/* make room for image */
+	padding-left: 60px;
+}
+
+#small-panel-container-bottom {
+	
+	/* margin is added to the padding of td.content-col */
+	margin-bottom: 6px;
+}
+
+#small-panel-container-top .small-panel img {
+	/* show image on the left side */
+	left: 10px;
+}
+
+#small-panel-container-bottom .small-panel {
+	/* make room for image */
+	padding-right: 70px;
+}
+
+#small-panel-container-bottom .small-panel img {
+	/* show image on the right side */
+	right: 10px;
+}
