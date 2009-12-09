@@ -5,7 +5,7 @@
 <wicket:extend>
 	<table class="content-table"><tr>
 	<td id="content-col1" class="content-col">
-		<div wicket:id="panel-charlottes-web" class="text-panel">
+		<div wicket:id="panel-charlottes-web" id="panel-charlottes-web" class="text-panel">
 			<h1>Charlotte's Web</h1>
 			<p>Charlotte's web is an award-winning children's novel by acclaimed American author E.B. White, 
 			about a pig named Wilbur <b>who is saved from being slaughtered by an intelligent spider named
@@ -16,22 +16,57 @@
 		</div>
 		<div wicket:id="panel-charlottes-widgets" id="panel-charlottes-widgets" class="text-panel">
 			<h1>Charlotte's Widgets</h1>
-			<img wicket:id="widget-eyes" src="images/WidgetEyes.gif" />
-			<img wicket:id="widget-body" src="images/WidgetBody.gif" />
-			<img wicket:id="widget-web" src="images/WidgetWeb.gif" />
-			<img wicket:id="widget-eggs" src="images/WidgetEggs.gif" />
-			<img wicket:id="widget-jaws" src="images/WidgetJaws.gif" />
-			<p>The novel tells the story of a pig named Wilbur and his friendship with a barn spider named Charlotte.
-			When Wilbur is <b>in danger of being slaughtered by the farmer, Charlotte writes messages praising Wilbur
-			(such as "Some Pig") in her web</b> in order to persuade the farmer to let him live...</p>
+			<table>
+				<tr><td id="panel-charlottes-widgets-col1">
+					<img wicket:id="widget-eggs" src="images/WidgetEggs.gif" />
+					<img wicket:id="widget-jaws" src="images/WidgetJaws.gif" />
+					<img wicket:id="widget-web" src="images/WidgetWeb.gif" />
+					<img wicket:id="widget-body" src="images/WidgetBody.gif" />
+					<img wicket:id="widget-eyes" src="images/WidgetEyes.gif" />
+				</td><td>
+					<div class="small-panel">
+						<h2>Services</h2>
+						<p>Based on the essential body parts and skills of a spider</p>
+					</div>
+				</td></tr>
+				<tr><td id="panel-charlottes-widgets-col1">
+					<img wicket:id="widget-sun" src="images/WidgetSun.gif" />
+					<img wicket:id="widget-universe" src="images/WidgetUniverse.gif" />
+					<img wicket:id="widget-planetandmoon" src="images/WidgetPlanetAndMoon.gif" />
+				</td><td>
+					<div class="small-panel">
+						<h2>Client</h2>
+						<p>Based on the symbols for the Sun, Moon & Planet and the Universe</p>
+					</div>
+				</td></tr>
+			</table>
 		</div>
-		<div wicket:id="panel-charlottes-colors" id="panel-charlottes-widgets" class="text-panel">
+		<div wicket:id="panel-charlottes-colors" id="panel-charlottes-colors" class="text-panel">
 			<h1>Charlotte's Colors</h1>
-			<img wicket:id="color-darkest" src="images/ColorDarkest.gif" />
-			<img wicket:id="color-dark" src="images/ColorDark.gif" />
-			<img wicket:id="color-light" src="images/ColorLight.gif" />
-			<img wicket:id="color-lightest" src="images/ColorLightest.gif" />
-			<img wicket:id="color-green" src="images/ColorGreen.gif" />
+			<table>
+				<tr><td id="panel-charlottes-colors-col1">
+					<table><tr>
+					<td><img wicket:id="color-darkest" src="images/ColorDarkest.gif" /></td>
+					<td><img wicket:id="color-dark" src="images/ColorDark.gif" /></td>
+					<td><img wicket:id="color-light" src="images/ColorLight.gif" /></td>
+					<td><img wicket:id="color-lightest" src="images/ColorLightest.gif" /></td>
+					<td><img wicket:id="color-green" src="images/ColorGreen.gif" /></td>
+					</tr><tr>
+					<td><span>#4D3F3F</span></td>
+					<td><span>#948C8C</span></td>
+					<td><span>#DBD9D9</span></td>
+					<td><span>#F8F7F7</span></td>
+					<td><span>#ADD036</span></td>
+					</tr></table>
+				</td><td id="panel-charlottes-colors-col2">
+					<div class="small-panel">
+						<h2>Liver</h2>
+						<p>Only organ that is regenerative and cleans the body from poisons</p>
+						<h2>Green</h2>
+						<p>Color of growth, creativity but also poisonous</p>
+					</div>
+				</td></tr>
+			</table>
 		</div>
 	</td>
 	<td id="content-col2" class="content-col">
@@ -70,12 +105,12 @@
 			</div>
 			<div class="small-panel">
 				<h1>The Eggs</h1>
-				<p>Represents GROWTH, EXPANSION and SCALE</p>
+				<p>Represent <span class="caps">GROWTH</span>, <span class="caps">EXPANSION</span> and <span class="caps">scale</span></p>
 				<img wicket:id="widget-eggs" src="images/WidgetEggs.gif" />
 			</div>
 			<div class="small-panel">
 				<h1>The Jaws</h1>
-				<p>Represents both OFFENSIVE and DEFENSIVE actions that could imply LEGAL actions</p>
+				<p>Represent both <span class="caps">OFFENSIVE</span> and <span class="caps">DEFENSIVE</span> actions that could imply <span class="caps">LEGAL</span> actions</p>
 				<img wicket:id="widget-jaws" src="images/WidgetJaws.gif" />
 			</div>
 		</div>

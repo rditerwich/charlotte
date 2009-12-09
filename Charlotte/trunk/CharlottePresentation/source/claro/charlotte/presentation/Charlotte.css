@@ -4,48 +4,65 @@
 	font-family: sans-serif;
 	font-size: 10pt;
 	color: #4D3F3F;
+	letter-spacing: 1px;
 }
 
 .spacer {
 	clear: both;
 }
 
+.caps {
+	letter-spacing: normal;
+	text-transform: uppercase;
+}
+
 /*** Global Page ***/
 
 
-body {
-	margin: 20px;
-	text-align: center;
-}
-
 #page-panel {
+	
+	/* a bit of room on top */ 
+	margin-top: 20px;
+	
+	/* center horizontally */
 	margin-left: auto;
 	margin-right: auto;
+	
+	/* fluid layout */
 	width: 90%;
 	min-width: 1000px;
-	text-align: left;
 }
 
 /*** Header & Footer ***/
 
 #header-panel {
+	
+	/* because of absolute positioning images */
 	position: relative;
+	
+	/* darkest */
 	background-color: #4D3F3F;
+	
+	/* fixed height dictated by images */
 	height: 80px;
 }
 
 #footer-panel {
+	
+	/* darkest */
 	background-color: #4D3F3F;
+
+	margin-top: 12px;
 	height: 40px;
 }
 
 #logo {
 	position: absolute;
+	bottom: 18px;
 	
 	/* content-col padding + text-panel padding */
 	left: 24px;
 	
-	bottom: 18px;
 }
 
 #company-phrase {
@@ -59,6 +76,8 @@ body {
 }
 
 #header-image-panel {
+	
+	/* put images right-top */
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -106,31 +125,43 @@ body {
 
 #content-panel {
 	margin-top: 12px;
-	margin-bottom: 12px;
-	padding: 0px;
 }
 
 .content-table {
-	border-spacing: 0px;
+	
+	/* make sure table fills the content panel */
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
 }
+
 .content-col {
+	
+	/* default for tables is center */
 	vertical-align: top;
-	padding: 12px;
+	
+	/* vertical padding is taken care of by elements within the content-col */
+	padding-left: 12px;
+	padding-right: 12px;
 }
 
 /*** Various Panel Kinds ***/
 
 .text-panel {
+	/* lightest */
 	background-color: #F8F7F7;
+	
+	/* room between panels */
 	margin-top: 12px;
-	padding: 6px;
+	margin-bottom: 12px;
+	
+	/* room between panel border and content */
+	padding: 12px;
 }
 
 .text-panel h1 {
 	font-size: 12pt;
+	
+	/* reset margin inherited from text-panel */
+	margin-top: 0px;
 	
 	/* make room for background image */
 	padding-top: 2px; 	
@@ -142,7 +173,35 @@ body {
 	background-position: center left;
 }
 
+.text-panel h2 {
+	font-size: 11pt;
+	color: #4D3F3F;
+	padding: 0px;
+	margin: 0px;
+}
+
+.text-panel p {
+	/* reset margin inherited from text-panel */
+	margin-top: 12px;
+	
+	/* reset inherited margin-bottom */
+	margin-bottom: 0px; 
+}
+
+.text-panel .small-panel {
+	/* small panels inside text panels should be compressed */
+	padding: 0px;
+	margin: 0px;
+}
+
+.small-panel-container {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
 .small-panel {
+	
+	/* lightest */
 	background-color: #F8F7F7;
 	padding: 8px;
 	margin-top: 6px;

@@ -2,8 +2,12 @@
 /*** Left side ***/
 
 #content-col1 {
+	
+	/* light */
 	background-color: #DBD9D9;
-	width: 640px;
+	
+	/* somehow, this looks like the right balance */
+	width: 67%;
 	
 	/* space between col1 and col2 */
 	border-right: 12px solid white;
@@ -16,16 +20,62 @@
 	margin: 0px;
 }
 
+#panel-charlottes-web {
+	/* allow for one extra line wrap before box starts growing */
+	height: 164px; 
+	overflow: hidden;
+}
 
 #panel-charlottes-widgets img {
-	padding-left: 12px;
+	padding-right: 24px;
+}
+
+#panel-charlottes-colors img {
+	padding-right: 6px;
+}
+
+#panel-charlottes-widgets-col1, #panel-charlottes-colors-col1 {
+	/* fixed room for the images */
+	width: 380px;
+	
+	/* same as 48px + 2x 8px padding */
+	height: 65px;
+}
+
+#panel-charlottes-colors-col1 {
+	
+	/* Color images should be bottom aligned */
+	vertical-align: bottom;
+}
+
+#panel-charlottes-colors-col1 span {
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: center;
+	display: block;
+}
+
+#panel-charlottes-colors-col2 {
+	vertical-align: bottom;
+}
+
+#panel-charlottes-colors-col2 .small-panel {
+	
+	/* make room for text to move upwards when space is limited */
+	margin-top: -40px;
+}
+
+#panel-charlottes-colors-col2 h2 {
+	/* here we do want some space between the h2 sections */
+	margin-top: 6px;
 }
 
 /*** Right side ***/
 
-.small-panel {
+#content-col2 .small-panel {
 	height: 48px;
 	position: relative;
+	min-width: 290px;
 }
 
 .small-panel img {
@@ -43,12 +93,6 @@
 #small-panel-container-top .small-panel {
 	/* make room for image */
 	padding-left: 60px;
-}
-
-#small-panel-container-bottom {
-	
-	/* margin is added to the padding of td.content-col */
-	margin-bottom: 6px;
 }
 
 #small-panel-container-top .small-panel img {
