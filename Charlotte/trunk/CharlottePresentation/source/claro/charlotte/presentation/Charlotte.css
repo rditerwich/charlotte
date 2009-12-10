@@ -16,109 +16,12 @@
 	text-transform: uppercase;
 }
 
-/*** Global Page ***/
-
-
-#page-panel {
-	
-	/* a bit of room on top */ 
-	margin-top: 20px;
-	
-	/* center horizontally */
-	margin-left: auto;
-	margin-right: auto;
-	
-	/* fluid layout */
-	width: 90%;
-	min-width: 1000px;
+table {
+	border-spacing: 0px;
 }
 
-/*** Header & Footer ***/
-
-#header-panel {
-	
-	/* because of absolute positioning images */
-	position: relative;
-	
-	/* darkest */
-	background-color: #4D3F3F;
-	
-	/* fixed height dictated by images */
-	height: 80px;
-}
-
-#footer-panel {
-	
-	/* darkest */
-	background-color: #4D3F3F;
-
-	margin-top: 12px;
-	height: 40px;
-}
-
-#logo {
-	position: absolute;
-	bottom: 18px;
-	
-	/* content-col padding + text-panel padding */
-	left: 24px;
-	
-}
-
-#company-phrase {
-	color: white;
-	font-size: 16pt;
-	position: absolute;
-	
-	/* make sure it aligns nicely with logo */
-	left: 160px;
-	bottom: 14px;
-}
-
-#header-image-panel {
-	
-	/* put images right-top */
-	position: absolute;
-	top: 0px;
-	right: 0px;
-}
-
-#header-image-panel img {
-	width: 120px;
-	height: 80px;
-}
-
-
-#round-corner-left-top {
-	position: absolute;
-	top: 0px;
-}
-
-#round-corner-right-top {
-	position: relative;
-	float: right;
-	top: -80px;
-	z-index: 1;
-}
-
-#round-corner-left-bottom {
-	position: relative;
-	float: left;
-	top: -14px;
-}
-
-#round-corner-right-bottom {
-	position: relative;
-	float: right;
-	top: -14px;
-}
-
-/*** Menu Bar ***/
-
-#menu-panel {
-	height: 30px;
-	background-color: #948C8C;
-	margin-top: 12px;
+td {
+	padding: 0px;
 }
 
 /*** Page Content ***/

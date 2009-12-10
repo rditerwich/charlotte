@@ -1,0 +1,154 @@
+/*** Global Page ***/
+
+
+#page-panel {
+	
+	/* a bit of room on top */ 
+	margin-top: 20px;
+	
+	/* center horizontally */
+	margin-left: auto;
+	margin-right: auto;
+	
+	/* fluid layout */
+	width: 90%;
+	min-width: 1000px;
+}
+
+/*** Header ***/
+
+#header-panel {
+	
+	/* because of absolute positioning images */
+	position: relative;
+	
+	/* darkest */
+	background-color: #4D3F3F;
+	
+	/* fixed height dictated by images */
+	height: 80px;
+}
+
+#logo {
+	position: absolute;
+	bottom: 18px;
+	
+	/* content-col padding + text-panel padding */
+	left: 24px;
+	
+}
+
+#company-phrase {
+	color: white;
+	font-size: 16pt;
+	position: absolute;
+	
+	/* make sure it aligns nicely with logo */
+	left: 160px;
+	bottom: 14px;
+}
+
+#header-image-panel {
+	
+	/* put images right-top */
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#header-image-panel img {
+	width: 120px;
+	height: 80px;
+}
+
+
+/*** Menu Bar ***/
+
+#menu-panel {
+	margin-top: 12px;
+	height: 30px;
+	color: white;
+
+	/* allow precise positioning of elements within */
+	position:relative;
+	
+	/* dark */
+	background-color: #948C8C;
+	
+	/* align with text-panel text */
+	padding-left: 24px;
+}
+
+#menu-links-panel {
+	
+	/* poor-man's vertical centering */
+	padding-top: 4px;
+}
+
+#menu-panel span {
+}
+
+#menu-panel a {
+	text-decoration: none;
+	color: white;
+	font-size: 10pt;
+}
+
+#menu-panel a.selected {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 10pt;
+	color: #ADD036;
+}
+
+#menu-panel a:hover {
+	color: #ADD036;
+}
+
+#menu-panel .bull {
+	/* why is there already space on the right??? */
+	padding-left: 5px;
+	padding-right: 2px;
+	font-size: 14pt;
+	color: white;
+	
+	/* make bullet align with menu items */
+	vertical-align: -2px;
+}
+
+#menu-login-panel {
+	position: absolute;
+	
+	/* again, poor man's centering */
+	top: 3px;
+	right: 24px;
+}
+
+#login-user-password {
+	color: white;
+	letter-spacing: normal;
+}
+
+#login-user-password input {
+	/* darkest */
+	color: #4D3F3F;
+	border: 1px solid #4D3F3F;
+}
+
+#login-button input {
+	margin-left: 6px;
+	margin-top: 2px;
+}
+
+/*** Footer ***/
+
+#footer-panel {
+	
+	/* darkest */
+	background-color: #4D3F3F;
+
+	margin-top: 12px;
+	height: 40px;
+}
+

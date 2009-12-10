@@ -3,13 +3,12 @@
 <wicket:head>
   <title>Charlotte</title>
   <wicket:link>
-    <link rel="stylesheet" type="text/css" href="Charlotte.css"/>
   </wicket:link>
 </wicket:head>
 <body>
 	<div id="page-panel">
 		<div wicket:id="header-panel" id="header-panel">
-			<img wicket:id="logo" id="logo"/>
+			<img wicket:id="logo" id="logo" src="images/CharlotteLogo.gif"/>
     		<span id="company-phrase">Your Eyes on the Web</span>
 			<div wicket:id="header-image-panel" id="header-image-panel">
 		   		<img wicket:id="header-image1" id="header-image1"/><img wicket:id="header-image2" id="header-image2"/><img wicket:id="header-image3" id="header-image3"/>
@@ -17,8 +16,22 @@
 	    </div>
 
 		<div id="menu-panel">
-			<span><a wicket:id="home-page">Home</a></span>
-			<span><a wicket:id="concept-page">The Concept</a></span>
+			<div id="menu-links-panel">
+				<span><a wicket:id="home-page">Home</a></span><span class="bull">&bull;</span>
+				<span><a wicket:id="concept-page">The Concept</a></span><span class="bull">&bull;</span>
+				<span><a wicket:id="services-page">Our Services</a></span><span class="bull">&bull;</span>
+				<span><a wicket:id="profile-page">Your Profile</a></span><span class="bull">&bull;</span>
+				<span><a wicket:id="blog-page">Our Blog</a></span><span class="bull">&bull;</span>
+				<span><a wicket:id="contact-page">Contact us</a></span>
+			</div>
+			<div id="menu-login-panel">
+				<form action="login">
+					<table><tr>
+					<td id="login-user-password">login <input size="10"></input> password <input size="10" type="password"></input></td>
+					<td id="login-button"><input wicket:id="login-button" type="image" src="images/WidgetEyesOnDarkSmallest.gif" /></td>
+					</tr></table>
+				</form>
+			</div>
 		</div>
 		
 		<div id="content-panel"><wicket:child/><div class="spacer" />
