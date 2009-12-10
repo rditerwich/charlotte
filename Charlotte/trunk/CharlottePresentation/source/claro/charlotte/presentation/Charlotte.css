@@ -1,6 +1,6 @@
 /*** Generic Definitions ***/
 
-* {
+html {
 	font-family: sans-serif;
 	font-size: 10pt;
 	color: #4D3F3F;
@@ -22,6 +22,21 @@ table {
 
 td {
 	padding: 0px;
+}
+
+button {
+	/* darkest */
+	background-color: #4D3F3F;
+	border: none;
+	text-align: center;
+	letter-spacing: normal;
+	color: white;
+	cursor: pointer;
+	padding-bottom: 2px;
+}
+	
+button:hover {
+	color: #ADD036;
 }
 
 /*** Page Content ***/

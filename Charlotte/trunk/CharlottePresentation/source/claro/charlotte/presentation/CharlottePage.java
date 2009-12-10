@@ -32,7 +32,7 @@ public class CharlottePage extends WebPage {
 		add(new ImageButton("login-button")).
 		add(createPageLink("home-page", HomePage.class));
 		add(createPageLink("concept-page", ConceptPage.class));
-		add(createPageLink("services-page", ConceptPage.class));
+		add(createPageLink("services-page", ServicesPage.class));
 		add(createPageLink("profile-page", ConceptPage.class));
 		add(createPageLink("blog-page", ConceptPage.class));
 		add(createPageLink("contact-page", ConceptPage.class));
