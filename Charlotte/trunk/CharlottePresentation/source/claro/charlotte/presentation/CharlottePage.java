@@ -2,7 +2,6 @@ package claro.charlotte.presentation;
 
 import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.markup.html.CSSPackageResource;
-import org.apache.wicket.markup.html.PackageResource;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.ImageButton;
@@ -26,17 +25,22 @@ public class CharlottePage extends WebPage {
 		add(new RoundedBox("header-panel", getClass(), "images/CornerDarkestOnWhiteLeftTop.gif", "images/CornerDarkestOnWhiteRightTop.gif", null, null).
 			add(new Image("logo")).
 			add(new WebMarkupContainer("header-image-panel").
-				add(new RandomImage("header-image1", "people/People%d.jpg", imageGroup)).
-				add(new RandomImage("header-image2", "people/People%d.jpg", imageGroup)).
-				add(new RandomImage("header-image3", "people/People%d.jpg", imageGroup))));
+				add(new RandomImage("header-image1", getClass(), "images/people/People%d.jpg", imageGroup)).
+				add(new RandomImage("header-image2", getClass(), "images/people/People%d.jpg", imageGroup)).
+				add(new RandomImage("header-image3", getClass(), "images/people/People%d.jpg", imageGroup))));
 		add(new ImageButton("login-button")).
 		add(createPageLink("home-page", HomePage.class));
 		add(createPageLink("concept-page", ConceptPage.class));
 		add(createPageLink("services-page", ServicesPage.class));
-		add(createPageLink("profile-page", ConceptPage.class));
-		add(createPageLink("blog-page", ConceptPage.class));
-		add(createPageLink("contact-page", ConceptPage.class));
-		add(new RoundedBox("footer-panel", getClass(), null, null, "images/CornerDarkestOnWhiteLeftBottom.gif", "images/CornerDarkestOnWhiteRightBottom.gif"));
+		add(createPageLink("profile-page", ProfilePage.class));
+		add(createPageLink("blog-page", BlogPage.class));
+		add(createPageLink("contact-page", ContactPage.class));
+		add(new RoundedBox("footer-panel", getClass(), null, null, "images/CornerDarkestOnWhiteLeftBottom.gif", "images/CornerDarkestOnWhiteRightBottom.gif").
+			add(new Image("growth-image")).
+			add(new Image("legal-image")).
+			add(new Image("presence-image")).
+			add(new Image("warp-image")).
+			add(new Image("monitor-image")));
 	}
 	
 	private Link<?> createPageLink(String id, Class<? extends CharlottePage> pageClass) {

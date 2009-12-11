@@ -5,10 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import org.apache.wicket.Resource;
+import org.apache.wicket.ResourceReference;
 import org.apache.wicket.ajax.AbstractAjaxTimerBehavior;
 import org.apache.wicket.ajax.AjaxRequestTarget;
-import org.apache.wicket.resource.ContextRelativeResource;
 import org.apache.wicket.util.time.Duration;
 
 public class RandomImageGroup implements Serializable {
@@ -66,10 +65,17 @@ public class RandomImageGroup implements Serializable {
 			}
 		}
 	}
+
+	void chooseRandomImages() {
+		for (RandomImage image : randomImages) {
+			chooseUniqueRandomImage(image);
+		}
+	}
+	
 	
 	private void chooseUniqueRandomImage(RandomImage image) {
 		for (int i = 0; i < 20; i++) {
-			String imageResource = image.chooseRandomImage();
+			ResourceReference imageResource = image.chooseRandomImage();
 			if (imageResource != null) {
 				boolean isUnique = true;
 				for (RandomImage otherImage : randomImages) {
@@ -95,5 +101,4 @@ public class RandomImageGroup implements Serializable {
 			chances[pos] = temp;
 		}
 	}
-	
 }

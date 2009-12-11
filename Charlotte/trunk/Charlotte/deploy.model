@@ -30,3 +30,29 @@ DeploymentConfiguration {
         }
     }
 }
+
+DeploymentConfiguration {
+    id = claro.charlotte.deployment.server
+    name = "Charlotte Deployment server.mdacompany.com"
+    productConfigurations = {
+        Glassfish2Configuration {
+            debugDeployment = false
+            installDir = "d:/glassfish"
+            domain = domain1
+            appServer = server.mdacompany.com
+            amxServer = server.mdacompany.com
+            
+            dbConfiguration = PostgreSQLConfiguration {
+                installDir = "c:/Program Files/PostgreSQL/8.3"
+                server = server.mdacompany.com
+                port = 5432
+                databaseName = CharlotteDatabase
+                username = postgres
+                password = postgres
+                schemaUpdateKind = upgrade
+                jdbcDriverClasspath = "C:/Program Files/psqlJDBC/postgresql-8.3-603.jdbc3.jar"
+            }
+
+        }
+    }
+}

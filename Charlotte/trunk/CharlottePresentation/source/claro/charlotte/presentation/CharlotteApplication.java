@@ -10,10 +10,13 @@ public class CharlotteApplication extends WebApplication {
 		mountBookmarkablePage("/home", HomePage.class);
 		mountBookmarkablePage("/concept", ConceptPage.class);
 		mountBookmarkablePage("/services", ServicesPage.class);
+		mountBookmarkablePage("/profile", ProfilePage.class);
+		mountBookmarkablePage("/blog", BlogPage.class);
+		mountBookmarkablePage("/contact", ContactPage.class);
 	}
 	
 	@Override
     public Class<? extends Page> getHomePage() {
-        return HomePage.class;
+        return ConceptPage.class;
     }
 }

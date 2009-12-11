@@ -149,6 +149,18 @@
 	background-color: #4D3F3F;
 
 	margin-top: 12px;
+	padding-top: 8px;
+	padding-left: 6px;
 	height: 40px;
 }
 
+#footer-panel td {
+	vertical-align: middle;
+	color: white;
+	font-size: 8pt;
+}
+
+#footer-panel td img {
+	padding-left: 20px;
+	padding-right: 8px;
+}
