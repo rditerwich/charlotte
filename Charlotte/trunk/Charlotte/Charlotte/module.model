@@ -1,0 +1,13 @@
+root /modules
+
+import Metaphor.Core.Dependency
+import Metaphor.Core.Version
+
+import Metaphor.Core.Module
+
+Module {
+    id = claro.charlotte
+    name = Charlotte
+    provider = Claro
+    version = Version { major = 1 minor = 0 micro = 0 }
+}
