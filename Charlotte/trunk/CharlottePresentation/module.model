@@ -2,9 +2,9 @@ root /modules
 
 import Metaphor.Core.Dependency
 import Metaphor.Core.Version
-import Metaphor.PSM.Web.WebModule
+import Metaphor.Core.Module
 
-WebModule {
+Module {
     id = claro.charlotte.presentation
     name = CharlottePresentation
     provider = Claro
