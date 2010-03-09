@@ -7,6 +7,7 @@ import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.ImageButton;
 import org.apache.wicket.markup.html.image.Image;
 import org.apache.wicket.markup.html.link.BookmarkablePageLink;
+import org.apache.wicket.markup.html.link.ExternalLink;
 import org.apache.wicket.markup.html.link.Link;
 import org.apache.wicket.model.Model;
 import org.apache.wicket.util.time.Duration;
@@ -22,7 +23,7 @@ public class CharlottePage extends WebPage {
 		RandomImageGroup imageGroup = new RandomImageGroup(Duration.seconds(6), 80, -70);
 		add(CSSPackageResource.getHeaderContribution(getClass(), "Charlotte.css"));
 		add(CSSPackageResource.getHeaderContribution(getClass(), "CharlottePage.css"));
-		add(new RoundedBox("header-panel", getClass(), "images/CornerDarkestOnWhiteLeftTop.gif", "images/CornerDarkestOnWhiteRightTop.gif", null, null).
+		add(new RoundedBox("header-panel", getClass(), "images/CornerDarkestOnGreenLeftTop.gif", "images/CornerDarkestOnGreenRightTop.gif", null, null).
 			add(new Image("logo")).
 			add(new WebMarkupContainer("header-image-panel").
 				add(new RandomImage("header-image1", getClass(), "images/people/People%d.jpg", imageGroup)).
@@ -30,12 +31,13 @@ public class CharlottePage extends WebPage {
 				add(new RandomImage("header-image3", getClass(), "images/people/People%d.jpg", imageGroup))));
 		add(new ImageButton("login-button")).
 		add(createPageLink("home-page", HomePage.class));
-		add(createPageLink("concept-page", ConceptPage.class));
-		add(createPageLink("services-page", ServicesPage.class));
-		add(createPageLink("profile-page", ProfilePage.class));
-		add(createPageLink("blog-page", BlogPage.class));
+//		add(createPageLink("concept-page", ConceptPage.class));
+//		add(createPageLink("services-page", ServicesPage.class));
+//		add(createPageLink("profile-page", ProfilePage.class));
+//		add(createPageLink("blog-page", BlogPage.class));
+		add(createPageLink("aboutus-page", AboutUsPage.class));
 		add(createPageLink("contact-page", ContactPage.class));
-		add(new RoundedBox("footer-panel", getClass(), null, null, "images/CornerDarkestOnWhiteLeftBottom.gif", "images/CornerDarkestOnWhiteRightBottom.gif").
+		add(new RoundedBox("footer-panel", getClass(), null, null, "images/CornerDarkestOnGreenLeftBottom.gif", "images/CornerDarkestOnGreenRightBottom.gif").
 			add(new Image("growth-image")).
 			add(new Image("legal-image")).
 			add(new Image("presence-image")).

@@ -8,10 +8,11 @@ public class CharlotteApplication extends WebApplication {
 	@Override
 	protected void init() {
 		mountBookmarkablePage("/home", HomePage.class);
-		mountBookmarkablePage("/concept", ConceptPage.class);
-		mountBookmarkablePage("/services", ServicesPage.class);
-		mountBookmarkablePage("/profile", ProfilePage.class);
-		mountBookmarkablePage("/blog", BlogPage.class);
+//		mountBookmarkablePage("/concept", ConceptPage.class);
+//		mountBookmarkablePage("/services", ServicesPage.class);
+//		mountBookmarkablePage("/profile", ProfilePage.class);
+//		mountBookmarkablePage("/blog", BlogPage.class);
+		mountBookmarkablePage("/about", AboutUsPage.class);
 		mountBookmarkablePage("/contact", ContactPage.class);
 	}
 	

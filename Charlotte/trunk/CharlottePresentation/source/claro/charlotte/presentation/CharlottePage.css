@@ -5,13 +5,15 @@
 	
 	/* a bit of room on top */ 
 	margin-top: 20px;
-	
+	background-color: #DBD9D9;
+	background-color: #F8F7F7;
+		
 	/* center horizontally */
 	margin-left: auto;
 	margin-right: auto;
 	
 	/* fluid layout */
-	width: 90%;
+	width: 1024px;
 	min-width: 1000px;
 }
 

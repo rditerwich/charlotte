@@ -4,6 +4,7 @@ html {
 	font-family: sans-serif;
 	font-size: 10pt;
 	color: #4D3F3F;
+		background-color: #ADD036;
 }
 
 .spacer {
@@ -57,6 +58,7 @@ button:hover {
 	
 	/* make sure table fills the content panel */
 	width: 100%;
+	
 }
 
 .content-col {
