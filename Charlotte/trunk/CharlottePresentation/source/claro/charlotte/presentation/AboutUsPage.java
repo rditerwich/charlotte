@@ -8,7 +8,7 @@ import claro.wicket.html.RoundedBox;
 public class AboutUsPage extends CharlottePage {
 
 	public AboutUsPage() {
-		add(CSSPackageResource.getHeaderContribution(getClass(), "HomePage.css"));
+		add(CSSPackageResource.getHeaderContribution(getClass(), "AboutUsPage.css"));
 		add(new RoundedBox("panel-aboutus", getClass(), "images/CornerLightestOnLightLeftTop.gif", "images/CornerLightestOnLightRightTop.gif", "images/CornerLightestOnLightLeftBottom.gif", "images/CornerLightestOnLightRightBottom.gif"));
 		add(new RoundedBox("panel-oscar-pakasi", getClass(), "images/CornerLightestOnLightLeftTop.gif", "images/CornerLightestOnLightRightTop.gif", "images/CornerLightestOnLightLeftBottom.gif", "images/CornerLightestOnLightRightBottom.gif").
 				add(new Image("oscar-pakasi")));

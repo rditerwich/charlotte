@@ -18,6 +18,6 @@ public class CharlotteApplication extends WebApplication {
 	
 	@Override
     public Class<? extends Page> getHomePage() {
-        return ConceptPage.class;
+        return HomePage.class;
     }
 }
