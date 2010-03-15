@@ -12,9 +12,8 @@
 	margin-left: auto;
 	margin-right: auto;
 	
-	/* fluid layout */
+	/* static layout */
 	width: 1024px;
-	min-width: 1000px;
 }
 
 /*** Header ***/

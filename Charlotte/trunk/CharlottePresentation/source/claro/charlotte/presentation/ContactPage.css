@@ -7,7 +7,7 @@
 	background-color: #DBD9D9;
 	
 	/* somehow, this looks like the right balance */
-	width: 69%;
+	width: 610px;
 	
 	/* space between col1 and col2 */
 	border-right: 12px solid #F8F7F7;
@@ -15,9 +15,7 @@
 
 #content-col2 {
 	background-color: #948C8C;
-	width: 340px;
-	position: relative;
-	margin: 0px;
+	padding-bottom: 12px;
 }
 
 #panel-charlottes-web {
@@ -107,7 +105,6 @@
 #content-col2 .small-panel {
 	height: 80px;
 	position: relative;
-	min-width: 290px;
 }
 
 .small-panel img {
@@ -136,7 +133,7 @@
 #small-panel-container-bottom .small-panel {
 	/* make room for image */
 	padding-right: 70px;
-	height: 140px;
+	height: 160px;
 }
 
 #small-panel-container-bottom .small-panel img {
